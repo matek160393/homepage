@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/boxTable.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/aside.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <title>Mateusz Grincewicz-Pierwsza strona internetowa</title>
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="header__heading">Mateusz Grincewicz</h1>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li><a class="navigation__link" href="#o-mnie">O mnie</a></li>
+            <li><a class="navigation__link" href="#zainteresowania">Zainteresowania</a></li>
+            <li><a class="navigation__link" href="#ulubione-utwory">Ulubione utwory</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article class="article">
+            <img class="article__photoProfile" src="https://i.ibb.co/WsMwGcZ/IMG-20230114-131213-Easy-Resize-com.jpg"
+                alt="Mateusz Grincewicz">
+            <p class="article__welcome">Cześć ! miło mi ,że odwiedziłeś moją pierwszą strone internetowej
+                poniżej znajdziesz kilka informacji o mnie 
+                <br>
+                  <span class="article__emoji">
+                    &#128071;
+                  </span>
+            </p>
+            <h2 id="o-mnie" class="article__heading">O mnie</h2>
+            <p class="article__paragraph">Nazywam się Mateusz , mam 29 lat na codzień pracuję w drukarni przy produkcji
+                wszystkiego co związane
+                jest z
+                papierem.
+                <br>
+                Dlaczego frontend ? 
+                <br>
+                Podobnie jak w pracy lubię widzieć praktycznie od razu efekty
+                swoich
+                działań.</p>
+            <h2 id="zainteresowania" class="article__heading">Zainteresowania</h2>
+            <p class="article__paragraph">W wolnym czasie interesuję sie fotografią , która pozwala uwiecznić chwilę.
+                <br>
+                 Ten jeden moment który przeminie w ułamku sekundy , pozwolę sobie zacytować Wisławę Szymborską
+                <br>
+                  <q>
+                    Nic dwa razy sie nie zdarza i nie zdarzy
+                  </q>.
+                    W tym jednym zdaniu odnajduje piękno fotografi ,
+                <br>
+                 dzięki niej możemy wrocić do chwil które
+                 przeminęły.
+                 <br>
+                  <i>
+                    <strong>
+                        "Kupno Nikona nie czyni Cię fotografem.
+                        Stajesz się zaledwie posiadaczem
+                        Nikona."
+                    </strong>
+                  </i>
+            </p>
+            <button class="article__button js-buttonPhotos">Wyświetl Moje fotografie</button>
+            <p class="article__photos js-photos article__photos--hidden">
+                <img class="article__image" src="https://i.ibb.co/sqX1QNM/IMG-20221019-173401-Easy-Resize-com.jpg" alt="">
+                <img class="article__image" src="https://i.ibb.co/0MxYddW/IMG-20221019-173152-Easy-Resize-com.jpg" alt="">
+                <img class="article__image" src="https://i.ibb.co/9vkr9Vp/IMG-20221019-173525-Easy-Resize-com.jpg" alt="">
+            </p>
+            <p class="article__paragraph">
+                Drugą pasją jest rysunek.
+                <br>
+                rysowanie pozwala przenieść sie do świata w którym nie ma
+                ograniczeń , a właściwie ogranicza nas tylko nasza wyobraźnia.
+                Weź kartkę, ołówek i <em>spróbuj !</em> Sprawdź gdzie poniesię
+                cię twoja kreatywność .
+            </p>
+            <button class="article__button js-buttonDrawings">Wyświetl moje rysunki</button>
+            <p class="article__drawings js-drawings article__drawings--hidden">
+                <img class="article__image" src="https://i.ibb.co/YQNLsMw/IMG-20221203-223947-Easy-Resize-com.jpg" alt="">
+                <img class="article__image" src="https://i.ibb.co/VC26t3C/IMG-20221129-204517-Easy-Resize-com.jpg" alt="">
+            </p>
+        </article>
+        <section class="boxTable">
+            <table id="ulubione-utwory" class="table">
+                <caption class="table__caption">Moje ulubione utwory</caption>
+                <thead>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Tytuł</th>
+                        <th class="table__cell table__cell--header" scope="col">Album</th>
+                        <th class="table__cell table__cell--header" scope="col">Wykonawca</th>
+                        <th class="table__cell table__cell--header" scope="col">Rok wydania</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Head Held High</th>
+                        <th class="table__cell">Head Held High</th>
+                        <td class="table__cell">Sera de Bruin</td>
+                        <td class="table__cell">2022</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Back To You</th>
+                        <th class="table__cell">Back To You</th>
+                        <td class="table__cell">Elley Duhé, Lost Frequencies, X Ambassadors</td>
+                        <td class="table__cell">2022</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Homesick</th>
+                        <td class="table__cell">Dua Lipa</td>
+                        <td class="table__cell">Dua Lipa</td>
+                        <td class="table__cell">2017</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <aside class="aside">
+            <p>
+                <q>
+                    Perfekcjonizm często <b>przeszkadza</b> w byciu programistą.
+                </q>
+            </p>
+        </aside>
+    </main>
+    <footer class="footer">
+      <a
+           class="footer__link" 
+           target="_blank"
+           rel="noreferrer noopener" 
+           title="Mateusz Grincewicz profil facebook"
+           href="https://www.facebook.com/mateusz.grincewicz"
+        >
+        <span class="footer__facebookIcon">
+            facebook
+        </span>
+        (Otwiera się w nowej karcie)
+      </a>
+    </footer>
+</body>
+</html>

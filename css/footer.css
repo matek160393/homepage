@@ -1,0 +1,19 @@
+.footer {
+    background-color: #c6c5b9;
+    padding: 20px;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__facebookIcon {
+    padding: 10px;
+    color: white;
+    background-color: #3b5998;
+    border-radius: 5px;
+}
+
+.footer__facebookIcon:hover {
+    background-color: #043db8;
+}

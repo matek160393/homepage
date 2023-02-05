@@ -1,0 +1,21 @@
+.navigation {
+    background-color: #c6c5b9;
+}
+
+.navigation__link {
+    color: rgb(71, 60, 60);
+    text-decoration: none;
+}
+
+.navigation__link:hover {
+    color: #ff0000;
+}
+
+.navigation__link:active {
+    color: #0000ff;
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding: 5px 0px;
+}
