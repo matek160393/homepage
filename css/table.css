@@ -5,7 +5,10 @@
 }
 
 .table__caption {
+    max-width: 190px;
+    background-color: #393d3fb8;
     text-align: left;
+    padding: 10px 10px;
     margin: 5px 20px;
     color: #ffffff;
 }

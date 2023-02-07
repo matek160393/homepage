@@ -7,6 +7,9 @@ html {
 }
 
 .body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: 1px;

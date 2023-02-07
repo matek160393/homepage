@@ -1,6 +1,6 @@
 .article__heading {
     color: #fdfdff;
-    background-color: #393d3f;
+    background-color: #171819;
     padding: 8px;
     max-width: 200px;
     font-size: 25px;
@@ -9,7 +9,7 @@
 }
 
 .article__paragraph {
-    background-color: #62929ed8;
+    background-color: #62929e9e;
     color: #fffffb;
     padding: 40px 20px;
     margin: 0px 0px 20px;
