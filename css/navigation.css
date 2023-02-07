@@ -1,10 +1,15 @@
 .navigation {
+    display: flex;
+    justify-content: center;
     background-color: #c6c5b9;
+    margin: 20px 0px;
 }
 
 .navigation__link {
     color: rgb(71, 60, 60);
     text-decoration: none;
+    padding: 5px 20px;
+    margin: auto 20px;
 }
 
 .navigation__link:hover {
@@ -16,6 +21,19 @@
 }
 
 .navigation__list {
+    display: flex;
+    flex-basis: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     list-style-type: none;
-    padding: 5px 0px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.navigation__item {
+    display: flex;
+    flex-wrap: wrap;
 }
