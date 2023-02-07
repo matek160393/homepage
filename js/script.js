@@ -1,21 +1,37 @@
-console.log("Cześć!");
-let photos = document.querySelector(".js-photos");
-let buttonPhotos = document.querySelector(".js-buttonPhotos");
-let drawings = document.querySelector(".js-drawings");
-let buttonDrawings = document.querySelector(".js-buttonDrawings");
+{
+    const togglePhotosView = () => {
+        const photos = document.querySelector(".js-photos");
+        photos.classList.toggle("article__photos--hidden");
+        const photosButtonText = document.querySelector(".js-photosButtonText");
+        buttonPhotos.innerText = photos.classList.contains("article__photos--hidden")
+            ? "Wyświetl moje fotografie"
+            : "Ukryj fotografie";
+    }
 
-buttonPhotos.addEventListener("click", () => {
-    photos.classList.toggle("article__photos--hidden");
-    
-    buttonPhotos.innerText = photos.classList.contains("article__photos--hidden")
-        ? "Wyświetl moje fotografie"
-        : "Ukryj fotografie";
-});
+    const onPhotosDisplay = () => {
+        const buttonPhotos = document.querySelector(".js-buttonPhotos");
+        buttonPhotos.addEventListener("click", togglePhotosView);
+    };
+    onPhotosDisplay();
 
-buttonDrawings.addEventListener("click", () => {
-    drawings.classList.toggle("article__drawings--hidden");
+    const toggleDrawingsView = () => {
+        const drawings = document.querySelector(".js-drawings");
+        drawings.classList.toggle("article__drawings--hidden");
+        
+        const buttonText = document.querySelector(".js-drawingsButtonText");
+        buttonText.innerText = drawings.classList.contains(".js-drawingsButtonText")
+            ? "Wyświetl moje rysunki"
+            : "Ukryj rysunki";
+    }
 
-    buttonDrawings.innerText = drawings.classList.contains("article__drawings--hidden")
-        ? "Wyświetl moje rysunki"
-        : "Ukryj rysunki";
-});
+    const onDrawingsDisplay = () => {
+        const buttonDrawings = document.querySelector(".js-buttonDrawings");
+        buttonDrawings.addEventListener("click", toggleDrawingsView);
+    }
+    onDrawingsDisplay();
+
+    const welcome = () => {
+        console.log("Cześć!");
+    }
+    welcome();
+};
