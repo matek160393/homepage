@@ -1,29 +1,3 @@
-.article {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px 0px;
-}
-
-.article__photoProfile {
-    border-radius: 50%;
-}
-
-.article__welcomeText {
-    color: #c6c5b9;
-    background-color: #393d3f58;
-    text-align: center;
-    max-width: 250px;
-    padding: 10px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 50px -20px rgb(247, 247, 248);
-}
-
-.article__emoji {
-    font-size: 30px;
-}
-
 .article__heading {
     color: #fdfdff;
     background-color: #393d3f;
