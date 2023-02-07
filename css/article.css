@@ -1,15 +1,21 @@
-.article__photoProfile {
-    border-radius: 50%;
-    margin-top: 15px;
+.article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
 }
 
-.article__welcome {
+.article__photoProfile {
+    border-radius: 50%;
+}
+
+.article__welcomeText {
     color: #c6c5b9;
-    background-color: #393d3f;
+    background-color: #393d3f58;
     text-align: center;
     max-width: 250px;
     padding: 10px;
-    margin: 15px auto;
+    margin: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 50px -20px rgb(247, 247, 248);
 }
