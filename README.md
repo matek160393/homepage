@@ -8,7 +8,7 @@ thanks to this site you will learn more about me, what I am interested in, and y
 
 ## screenshot
 
-![](../Homepage/images/matek160393.github.io_homepage_.png)
+![screenshot website](https://raw.githubusercontent.com/matek160393/homepage/9ae21a38cc054f8da182b25c38318328e834d1f3/images/matek160393.github.io_homepage_.png)
 
 ## Technologies used in the project
 - HTML
