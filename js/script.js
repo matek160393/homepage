@@ -24,15 +24,16 @@
         }
         welcome();
 
-        const buttonDrawings = document.querySelector(".js-buttonDrawings");
-        buttonDrawings.addEventListener("click", toggleDrawingsView);
+        const button = document.querySelectorAll(".js-button");
 
-        const buttonPhotos = document.querySelector(".js-buttonPhotos");
-        buttonPhotos.addEventListener("click", togglePhotosView);
+        button.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                togglePhotosView(index);
+                toggleDrawingsView(index);
+            })
+        });
+
 
     }
     init();
-
-    
-   
 };
