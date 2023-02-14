@@ -32,8 +32,6 @@
                 toggleDrawingsView(index);
             })
         });
-
-
     }
     init();
 };
